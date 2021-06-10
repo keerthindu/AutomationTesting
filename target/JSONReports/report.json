@@ -1,0 +1,86 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-04T04:44:16.301Z",
+        "line": 5,
+        "name": "Check login is successfull with valid Credential",
+        "description": "",
+        "id": "login-functionality;check-login-is-successfull-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter user name and password",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.enter_user_name_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is entered into home page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_entered_into_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smokeregression"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resource/Features/login.feature",
+    "tags": [
+      {
+        "name": "@Smokeregression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

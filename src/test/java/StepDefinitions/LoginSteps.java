@@ -1,0 +1,68 @@
+//package StepDefinitions;
+//
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.Keys;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//
+//import io.cucumber.java.en.And;
+//import io.cucumber.java.en.Given;
+//import io.cucumber.java.en.Then;
+//import io.cucumber.java.en.When;
+//
+//public class LoginSteps {
+//	
+//	WebDriver driver = null;
+//	
+//	@Given("Broswe is open")
+//	public void broswe_is_open() {
+//		
+//		String path = System.getProperty("user.dir");
+//		System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver.exe" );
+//		
+//		
+//		driver = new ChromeDriver();
+//		driver.manage().window().maximize();
+//		driver.navigate().to("https://example.testproject.io/web/");
+//		System.out.println("User navigated into login page");
+//		  
+//	}
+//
+//	@And("user is on login page")
+//	public void user_is_on_login_page() {
+//	    String title = driver.getTitle();
+//	    System.out.println("Login page title is" +title);
+//		
+//	}
+//
+//	@When("^enter (.*) and (.*)$")
+//	public void enter_user_name_and_password(String username, String password) {
+//		driver.findElement(By.id("name")).sendKeys(username);
+//		driver.findElement(By.id("password")).sendKeys(password);
+//		System.out.println("Enter credential successfully");
+//	    
+//	}
+//	
+//	@And("Clicks on submit button")
+//	public void clicks_on_submit_button() {
+//	   driver.findElement(By.id("login")).sendKeys(Keys.ENTER);
+//	   System.out.println("User enter login button");
+//	    
+//	}
+//
+//	@Then("user is entered into home page")
+//	public void user_is_entered_into_home_page() throws Exception {
+//		String title = driver.getTitle();
+//		System.out.println("home page title is " +title);
+//		driver.findElement(By.id("logout")).isDisplayed();
+//		
+//		Thread.sleep(3000);
+//		
+//		driver.quit();
+//	    
+//	}
+//
+//	
+//
+//}
